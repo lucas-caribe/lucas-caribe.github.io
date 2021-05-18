@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+:is(h1, h2, h3) {
+    color: #00263e;
+}
+
+.container {
+    width: 78%;
+    margin: auto;
+}
+
+/* header */
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: 1.5em 0;
+}
+
+nav {
+    background-color: #00263e;
+    text-align: left;
+}
+
+.nav-content li {
+    display: inline-block;
+    padding: 1em 1.5em;
+}
+
+.nav-content li:first-child {
+    padding-left: 0;
+}
+
+.nav-content li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8em;
+    transition: color .2s;
+}
+
+.nav-content li a:hover {
+    color: #00d100;
+}
+
+/* main content */
+
+article h2, article h3 {
+    margin-bottom: 1em;
+}
+
+.general-info > img {
+    width: 43em;
+    margin: 2em 0;
+}
+
+.general-info p {
+    max-width: 68%;
+}
+
+.super-vision img, .super-punch img, .adamantium-gloves img {
+    margin: 2em 0;
+    width: 30em;
+}
+
+.adamantium-gloves ul {
+    margin: 1em 0 1em 3em;
+}
+
+/* table */
+
+.scientific-info {
+    float: right;
+    margin-left: 1em;
+    margin-top: -4.1em;
+}
+
+.info-table {
+    border: 1px solid black;
+    padding: .2em;
+    background-color: #f0f0f0;
+}
+
+.scientific-name {
+    font-size: .8em;
+    padding-bottom: 1.5em;
+}
+
+.mantis-image {
+    width: 18em;
+}
+
+.name, .scientific-classification {
+    font-size: 1.2em;
+    background-color: #00263e;
+    color: white;
+    padding: .4em 0;
+}
+
+.classification-table {
+    margin: .4em auto;
+}
+
+.classification-table td {
+    padding: .1em .8em;
+}
+
+/* references */
+
+.references a {
+    display: block;
+    margin-bottom: 1em; 
+}
+
+.references a:last-child {
+    margin-bottom: 2em;
+}
+
+/* video section */
+
+.video-section {
+    background-color: #00263e;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.video-section h1 {
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+/* footer */
+
+footer {
+    height: 10em;
+    text-align: center;
+    padding-top: 4.5em;
+}
+
+footer p {
+    color: #979797;
+    display: inline;
+}
