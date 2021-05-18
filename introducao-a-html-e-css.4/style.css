@@ -67,6 +67,7 @@ article h2, article h3 {
 .general-info > img {
     width: 43em;
     margin: 2em 0;
+    box-shadow: 0 0 4px black;
 }
 
 .general-info p {
@@ -76,6 +77,7 @@ article h2, article h3 {
 .super-vision img, .super-punch img, .adamantium-gloves img {
     margin: 2em 0;
     width: 30em;
+    box-shadow: 0 0 4px black;
 }
 
 .adamantium-gloves ul {
