@@ -17,8 +17,15 @@ body {
 }
 
 .container {
-    width: 78%;
+    width: 70%;
     margin: auto;
+}
+
+@media only screen and (max-width: 1366px) {
+    .container {
+        width: 78%;
+        margin: auto;
+    }
 }
 
 /* header */
