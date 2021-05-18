@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(253, 251, 251);
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+main {
+  margin-top: 7rem;
+}
+
+/* header */
+header {
+  height: 6rem;
+  padding-top: 2rem;
+}
+
+#cabecalho {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(3, 107, 82);
+  position: fixed;
+  top: 0;
+}
+
+#titulo {
+  color: white;
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.nav-content li {
+  display: inline-block;
+  padding: 0 1rem;
+  margin-top: 0.2rem;
+}
+
+.nav-content li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+
+.nav-content li a:hover {
+  color: rgb(182, 182, 182);
+}
+
+/* my info */
+#minha_foto {
+  width: 17rem;
+  margin-right: 2rem;
+  display: inline-block;
+}
+
+#informacoes table {
+  display: inline-block;
+  padding: 2rem;
+  border: 1px solid black;
+  text-align: left;
+}
+
+#informacoes table th {
+  padding-right: 1rem;
+}
+
+/* main content */
+.main-block {
+  padding: 3rem 0;
+  height: 22rem;
+}
+
+.lado-esquerdo {
+  float: left;
+  width: 40%;
+}
+
+.lado-esquerdo h1 {
+  margin-bottom: 1rem;
+}
+
+.lado-direito {
+  float: right;
+  padding: 0 2rem;
+}
+
+#licoes_aprendidas {
+  float: left;
+  margin-right: 3rem;
+}
+
+#licoes_aprendidas li , #licoes_a_aprender li {
+  margin: 0.1rem 0;
+}
+
+#licoes_a_aprender {
+  float: right;
+}
+
+/* aside */
+aside {
+  padding: 1rem;
+  border: 1px dashed black;
+  font-style: italic;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 3rem 0;
+  background-color: rgb(219, 219, 219);
+}
+
+footer p {
+  color: rgb(51, 51, 51);
+}
