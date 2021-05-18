@@ -7,6 +7,7 @@
 }
 
 body {
+    font-display: optional;
     font-family: Roboto, sans-serif;
     font-size: 1em;
     line-height: 1.3em;
@@ -17,8 +18,15 @@ body {
 }
 
 .container {
-    width: 78%;
+    width: 70%;
     margin: auto;
+}
+
+@media only screen and (max-width: 1366px) {
+    .container {
+        width: 78%;
+        margin: auto;
+    }
 }
 
 /* header */
@@ -67,6 +75,7 @@ article h2, article h3 {
 .general-info > img {
     width: 43em;
     margin: 2em 0;
+    box-shadow: 0 0 4px black;
 }
 
 .general-info p {
@@ -76,6 +85,7 @@ article h2, article h3 {
 .super-vision img, .super-punch img, .adamantium-gloves img {
     margin: 2em 0;
     width: 30em;
+    box-shadow: 0 0 4px black;
 }
 
 .adamantium-gloves ul {
@@ -153,6 +163,6 @@ footer {
 }
 
 footer p {
-    color: #979797;
+    color: #5e5e5e;
     display: inline;
 }
