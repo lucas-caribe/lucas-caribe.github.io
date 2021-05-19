@@ -105,12 +105,12 @@ nav {
   margin-right: 3rem;
 }
 
-#licoes_aprendidas li , #licoes_a_aprender li {
-  margin: 0.1rem 0;
-}
-
 #licoes_a_aprender {
   float: right;
+}
+
+#licoes_aprendidas li , #licoes_a_aprender li {
+  margin: 0.1rem 0;
 }
 
 /* aside */
