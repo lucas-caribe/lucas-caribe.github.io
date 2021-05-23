@@ -1,0 +1,3 @@
+[submodule "chess-board-editor"]
+	path = chess-board-editor
+	url = git@github.com:lucas-caribe/chess-board-editor.git
