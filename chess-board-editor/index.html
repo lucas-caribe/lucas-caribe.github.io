@@ -8,31 +8,39 @@
 
     <title>Chess Board Editor</title>
   </head>
+
   <body>
     <main>
-      <div class="selector">
-        <div class="selector-piece" pointer></div>
-        <div class="selector-piece" piece="black-king"></div>
-        <div class="selector-piece" piece="black-queen"></div>
-        <div class="selector-piece" piece="black-rook"></div>
-        <div class="selector-piece" piece="black-bishop"></div>
-        <div class="selector-piece" piece="black-knight"></div>
-        <div class="selector-piece" piece="black-pawn"></div>
-        <div class="selector-piece" trash></div>
-      </div>
+      <section class="board-section">
+        <div class="selector">
+          <div class="selector-piece" pointer></div>
+          <div class="selector-piece" piece="black-king"></div>
+          <div class="selector-piece" piece="black-queen"></div>
+          <div class="selector-piece" piece="black-rook"></div>
+          <div class="selector-piece" piece="black-bishop"></div>
+          <div class="selector-piece" piece="black-knight"></div>
+          <div class="selector-piece" piece="black-pawn"></div>
+          <div class="selector-piece" trash></div>
+        </div>
 
-      <div class="board"></div>
+        <div class="board"></div>
 
-      <div class="selector">
-        <div class="selector-piece" pointer></div>
-        <div class="selector-piece" piece="white-king"></div>
-        <div class="selector-piece" piece="white-queen"></div>
-        <div class="selector-piece" piece="white-rook"></div>
-        <div class="selector-piece" piece="white-bishop"></div>
-        <div class="selector-piece" piece="white-knight"></div>
-        <div class="selector-piece" piece="white-pawn"></div>
-        <div class="selector-piece" trash></div>
-      </div>
+        <div class="selector">
+          <div class="selector-piece" pointer></div>
+          <div class="selector-piece" piece="white-king"></div>
+          <div class="selector-piece" piece="white-queen"></div>
+          <div class="selector-piece" piece="white-rook"></div>
+          <div class="selector-piece" piece="white-bishop"></div>
+          <div class="selector-piece" piece="white-knight"></div>
+          <div class="selector-piece" piece="white-pawn"></div>
+          <div class="selector-piece" trash></div>
+        </div>
+      </section>
+
+      <section class="buttons-section">
+        <div class="button" id="check-attack">CHECK ATTACK</div>
+        <div class="button" id="attack">ATTACK</div>
+      </section>
     </main>
 
     <script src="./main.js"></script>
