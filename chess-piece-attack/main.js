@@ -1,5 +1,6 @@
 let board = document.querySelector('.board');
 let selectors = document.querySelectorAll('.selector');
+
 let selectedPiece;
 let placedWhitePiece = { x: -1, y: -1, type: '' };
 let placedBlackPiece = { x: -1, y: -1, type: '' };
