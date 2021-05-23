@@ -1,0 +1,3 @@
+[submodule "chess-piece-attack"]
+	path = chess-piece-attack
+	url = https://github.com/lucas-caribe/chess-piece-attack
