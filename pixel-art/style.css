@@ -129,7 +129,7 @@ input[type='number'] {
 	color: black;
 	box-shadow: inset 0px 0px 5px 1px gray;
 	width: 8em;
-	padding: 0.5em;
+	padding: 0.5em 1em;
 	text-align: center;
 	transition: background-color 0.2s, color 0.2s;
 }
