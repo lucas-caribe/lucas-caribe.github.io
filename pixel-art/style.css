@@ -73,6 +73,45 @@ header h1 {
 
 #color-palette {
 	padding: 1em;
+	position: relative;
+	width: max-content;
+	margin: 0 auto;
+}
+
+.palette-tooltip {
+	visibility: hidden;
+	position: absolute;
+	top: -25%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: .5em 1em;
+	background: var(--main-purple);
+	border-radius: 15px;
+	font-size: .6em;
+	color: white;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.palette-tooltip::after {
+	z-index: 99;
+	visibility: hidden;
+	content: '';
+	position: absolute;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid var(--main-purple);
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+#color-palette:hover .palette-tooltip,
+#color-palette:hover .palette-tooltip::after {
+	visibility: visible;
+  opacity: 1;
 }
 
 .selected {
