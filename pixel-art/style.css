@@ -24,6 +24,7 @@ header {
 	display: grid;
 	align-items: center;
 	grid-template-columns: 1fr 1fr 1fr;
+	min-height: 116px;
 	background-color: var(--header-color);
 	box-shadow: 0 1px 1px gray;
 	position: relative;
