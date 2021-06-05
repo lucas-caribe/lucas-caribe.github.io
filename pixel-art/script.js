@@ -2,6 +2,12 @@ const pixelBoardId = '#pixel-board';
 const colorPaletteId = '#color-palette';
 const colors = ['#000', '#f00', '#080', '#00f', '#ff0', '#fa0', '#808', '#822'];
 
+const maxBoardSize = 40;
+const minBoardSize = 5;
+
+const maxPixelSize = 40;
+const minPixelSize = 8;
+
 let pixelSize = 40;
 let boardSize = 14;
 
@@ -113,11 +119,11 @@ function addColorInputEventListener() {
 		input.addEventListener('change', (event) => {
 			const colorId = `#${event.target.id.replace('-input', '')}`;
 			const color = document.querySelector(colorId);
-      
-      const currentSelected = document.querySelector('.selected');
-      if (currentSelected) currentSelected.classList.remove('selected');
-      
-      color.classList.add('selected');
+
+			const currentSelected = document.querySelector('.selected');
+			if (currentSelected) currentSelected.classList.remove('selected');
+
+			color.classList.add('selected');
 			color.style.backgroundColor = event.target.value;
 		});
 	});
@@ -191,8 +197,8 @@ function handleGenerateBoardClick(event) {
 	} else {
 		boardSize = boardSizeInput.value;
 
-		if (boardSize < 5) boardSize = 5;
-		else if (boardSize > 30) boardSize = 30;
+		if (boardSize < minBoardSize) boardSize = minBoardSize;
+		else if (boardSize > maxBoardSize) boardSize = maxBoardSize;
 
 		setPixelBoard(boardSize, pixelSize);
 	}
@@ -208,6 +214,9 @@ function addGenerateBoardEventListener() {
 
 function addBoardSizeInputEventListener() {
 	const boardSizeInput = document.querySelector('#board-size');
+	boardSizeInput.placeholder = String(boardSize);
+	boardSizeInput.min = String(minBoardSize);
+	boardSizeInput.max = String(maxBoardSize);
 
 	boardSizeInput.addEventListener('keyup', (event) => {
 		if (event.key === 'Enter') {
@@ -227,8 +236,8 @@ function handlePixelSizeButtonClick(event) {
 	} else {
 		pixelSize = pixelSizeInput.value;
 
-		if (pixelSize < 8) pixelSize = 8;
-		else if (pixelSize > 40) pixelSize = 40;
+		if (pixelSize < minPixelSize) pixelSize = minPixelSize;
+		else if (pixelSize > maxPixelSize) pixelSize = maxPixelSize;
 
 		setPixelBoard(boardSize, pixelSize);
 	}
@@ -244,6 +253,9 @@ function addPixelSizeEventListener() {
 
 function addPixelInputEventListener() {
 	const pixelSizeInput = document.querySelector('#pixel-size');
+	pixelSizeInput.placeholder = String(pixelSize);
+	pixelSizeInput.min = String(minPixelSize);
+	pixelSizeInput.max = String(maxPixelSize);
 
 	pixelSizeInput.addEventListener('keyup', (event) => {
 		if (event.key === 'Enter') {
