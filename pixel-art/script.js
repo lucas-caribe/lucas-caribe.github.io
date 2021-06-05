@@ -1,6 +1,6 @@
 const pixelBoardId = '#pixel-board';
 const colorPaletteId = '#color-palette';
-const colors = ['#000', '#f00', '#080', '#00f', '#ff0', '#fa0', '#808', '#822'];
+const colors = ['#000', '#f00', '#080', '#00f', '#ff0', '#fa0', '#808', '#822', '#a36', '#fff'];
 
 const maxBoardSize = 40;
 const minBoardSize = 5;
