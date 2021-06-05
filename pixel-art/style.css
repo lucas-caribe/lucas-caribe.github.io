@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+	--header-color: #a4a5a6;
+	--main-purple: #83205d;
+	--main-purple-hover: #be0a79;
+	--body-color: #d4d4d4;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	background-color: var(--body-color);
+}
+
+/* header */
+header {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: var(--header-color);
+	position: relative;
+	transition: margin 0.3s;
+}
+
+.arrow {
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	top: 100%;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	background-color: var(--header-color);
+	background-repeat: no-repeat;
+	background-position: 14px 0;
+	background-size: 12px;
+	background-image: url('./assets/angle-up-solid.svg');
+	transition: background-image 0.3s;
+}
+
+header h1 {
+	color: var(--main-purple);
+	text-shadow: 1px 1px 0px black;
+}
+
+#clear-board {
+	justify-self: center;
+	width: 11em;
+	padding: 1em 1.5em;
+}
+
+/* colors */
+.color {
+	width: 32px;
+	height: 32px;
+	margin: 0.2em;
+	border: 1px solid black;
+	display: inline-block;
+	position: relative;
+}
+
+#color-palette {
+	padding: 1em;
+}
+
+.selected {
+	outline: 3px solid rgba(0, 0, 0, 0.226);
+}
+
+/* pixel board */
+#pixel-board {
+	display: grid;
+	box-shadow: 0 0 10px black;
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+
+.pixel {
+	background-color: white;
+	border: 1px solid rgb(189, 189, 189);
+}
+
+/* buttons */
+button {
+	cursor: pointer;
+	user-select: none;
+	background: var(--main-purple);
+	border: transparent;
+	border-radius: 20px;
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	width: auto;
+	padding: 0.6em 1.2em;
+	text-align: center;
+	transition: background-color 0.2s;
+	text-shadow: 1px 1px 0px black;
+}
+
+button:hover {
+	background-color: var(--main-purple-hover);
+}
+
+/* inputs */
+input[type='number'] {
+	font-family: 'Press Start 2P', cursive;
+	background: var(--body-color);
+	border: none;
+	border-radius: 20px;
+	color: black;
+	width: 8em;
+	padding: 0.5em;
+	text-align: center;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+input[type='number']:focus-visible {
+	outline: none;
+}
+
+.inputs {
+	display: flex;
+	padding: 1em;
+}
+
+.board-inputs,
+.pixel-inputs {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 0.5em;
+}
+
+.board-inputs > input,
+.pixel-inputs > input {
+	margin-bottom: 0.5em;
+}
+
+/* color inputs */
+input[type='color'] {
+	visibility: hidden;
+	position: absolute;
+}
