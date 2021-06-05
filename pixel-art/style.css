@@ -104,7 +104,7 @@ button {
 	width: auto;
 	padding: 0.6em 1.2em;
 	text-align: center;
-	transition: background-color 0.2s;
+	transition: brightness 0.2s;
 	text-shadow: 1px 1px 0px black;
 	box-shadow: 1px 2px 0px black;
 	position: relative;
@@ -118,6 +118,7 @@ button:active {
 	top: 2px;
 	left: 2px;
 	outline: 4px solid var(--header-color);
+	box-shadow: 1px 2px 0px var(--header-color);
 }
 
 /* inputs */
