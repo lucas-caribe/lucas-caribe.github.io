@@ -81,9 +81,10 @@ header h1 {
 .palette-tooltip {
 	visibility: hidden;
 	position: absolute;
-	top: -25%;
-	left: 50%;
-	transform: translateX(-50%);
+	width: max-content;
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%);
 	padding: .5em 1em;
 	background: var(--main-purple);
 	border-radius: 15px;
@@ -98,12 +99,12 @@ header h1 {
 	visibility: hidden;
 	content: '';
 	position: absolute;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 5px solid var(--main-purple);
-	top: 100%;
-	left: 50%;
-	transform: translateX(-50%);
+	border-right: 5px solid var(--main-purple);
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid transparent;
+	top: 50%;
+	left: -4px;
+	transform: translateY(-50%);
 	opacity: 0;
 	transition: opacity 0.3s;
 }

@@ -38,7 +38,7 @@ function setColors() {
 		colorPalette.appendChild(createColorInput(colors[i], i));
 	}
 
-	colorPalette.firstElementChild.classList.add('selected');
+	document.querySelector('#color0').classList.add('selected');
 }
 
 function setPixelBoard(bSize, pSize) {
