@@ -113,7 +113,11 @@ function addColorInputEventListener() {
 		input.addEventListener('change', (event) => {
 			const colorId = `#${event.target.id.replace('-input', '')}`;
 			const color = document.querySelector(colorId);
-
+      
+      const currentSelected = document.querySelector('.selected');
+      if (currentSelected) currentSelected.classList.remove('selected');
+      
+      color.classList.add('selected');
 			color.style.backgroundColor = event.target.value;
 		});
 	});
