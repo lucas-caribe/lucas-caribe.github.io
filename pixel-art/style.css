@@ -49,6 +49,7 @@ header {
 header h1 {
 	color: var(--main-purple);
 	text-shadow: 1px 2px 0px black;
+	user-select: none;
 }
 
 /* buttons */
@@ -115,6 +116,9 @@ button:active {
 }
 
 .palette-tooltip {
+	user-select: none;
+	color: white;
+	font-size: 0.6em;
 	visibility: hidden;
 	position: absolute;
 	width: max-content;
@@ -124,8 +128,6 @@ button:active {
 	padding: 0.5em 1em;
 	background: var(--main-purple);
 	border-radius: 15px;
-	font-size: 0.6em;
-	color: white;
 	opacity: 0;
 	transition: opacity 0.3s;
 }
