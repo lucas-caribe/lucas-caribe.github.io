@@ -277,7 +277,7 @@ function addGenerateBoardEventListener() {
 }
 
 function handleNumberInput(event) {
-	event.target.value = event.target.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+	event.target.value = event.target.value.replace(/[^0-9]/g, '');
 }
 
 function addBoardSizeInputEventListener() {
