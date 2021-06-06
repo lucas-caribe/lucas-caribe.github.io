@@ -5,6 +5,7 @@
 	--main-purple: #83205d;
 	--main-purple-hover: #be0a79;
 	--body-color: #d4d4d4;
+	--main-font: 'Press Start 2P', sans-serif;
 }
 
 * {
@@ -14,7 +15,7 @@
 }
 
 body {
-	font-family: 'Press Start 2P', sans-serif;
+	font-family: var(--main-font);
 	text-align: center;
 	background-color: var(--body-color);
 }
@@ -60,7 +61,7 @@ button {
 	border: transparent;
 	border-radius: 20px;
 	color: white;
-	font-family: 'Press Start 2P', cursive;
+	font-family: var(--main-font);
 	width: auto;
 	padding: 0.6em 1.2em;
 	text-align: center;
@@ -172,7 +173,7 @@ button:active {
 
 /* inputs */
 input[type='number'] {
-	font-family: 'Press Start 2P', cursive;
+	font-family: var(--main-font);
 	background: var(--body-color);
 	border: none;
 	border-radius: 20px;
