@@ -1,6 +1,18 @@
 const pixelBoardId = '#pixel-board';
+const pixelData = {};
 const colorPaletteId = '#color-palette';
-const colors = ['#000', '#f00', '#080', '#00f', '#ff0', '#fa0', '#808', '#822', '#a36', '#fff'];
+const colors = [
+	'#000',
+	'#f00',
+	'#080',
+	'#00f',
+	'#ff0',
+	'#fa0',
+	'#808',
+	'#822',
+	'#a36',
+	'#fff',
+];
 
 const maxBoardSize = 40;
 const minBoardSize = 5;
@@ -41,6 +53,10 @@ function setColors() {
 	document.querySelector('#color0').classList.add('selected');
 }
 
+function retrievePixelData(x, y) {
+	return pixelData[`${x}-${y}`] ? pixelData[`${x}-${y}`] : '';
+}
+
 function setPixelBoard(bSize, pSize) {
 	const pixelBoard = document.querySelector(pixelBoardId);
 	pixelBoard.innerHTML = '';
@@ -55,6 +71,9 @@ function setPixelBoard(bSize, pSize) {
 			pixel.className = 'pixel';
 			pixel.style.width = `${pSize}px`;
 			pixel.style.height = `${pSize}px`;
+			pixel.style.backgroundColor = retrievePixelData(i, j);
+			pixel.dataset.x = i;
+			pixel.dataset.y = j;
 			pixelBoard.appendChild(pixel);
 		}
 	}
@@ -129,6 +148,12 @@ function addColorInputEventListener() {
 	});
 }
 
+function setPixelData(x, y, color) {
+	const pixelKey = `${x}-${y}`;
+
+	pixelData[pixelKey] = color;
+}
+
 function addPixelBoardEventListener() {
 	const pixelBoard = document.querySelector(pixelBoardId);
 	pixelBoard.addEventListener('click', (event) => {
@@ -141,6 +166,11 @@ function addPixelBoardEventListener() {
 
 			target.setAttribute('prevColor', currentColor);
 			target.style.backgroundColor = currentColor;
+			setPixelData(
+				target.dataset.x,
+				target.dataset.y,
+				target.style.backgroundColor
+			);
 		}
 	});
 }
@@ -169,6 +199,12 @@ function addPixelBoardMouseOut() {
 
 		if (target.className === 'pixel' && event.buttons !== 1) {
 			target.style.backgroundColor = target.getAttribute('prevColor');
+		} else {
+			setPixelData(
+				target.dataset.x,
+				target.dataset.y,
+				target.style.backgroundColor
+			);
 		}
 	});
 }
