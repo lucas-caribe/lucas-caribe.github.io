@@ -341,7 +341,7 @@ function addToggleHeaderEventListener() {
 function retrievePixelDataFromLocalStorage() {
 	const data = JSON.parse(localStorage.getItem('pixelArtData'));
 	const boardSizeData = JSON.parse(localStorage.getItem('pixelArtBoardSize'));
-	const pixelSizeData = pixelSize = JSON.parse(localStorage.getItem('pixelArtPixelSize'));
+	const pixelSizeData = JSON.parse(localStorage.getItem('pixelArtPixelSize'));
 
 	if (data) {
 		pixelData = data;
