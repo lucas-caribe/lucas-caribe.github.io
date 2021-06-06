@@ -185,7 +185,17 @@ function addPixelBoardMouseOver() {
 			const currentSelected = document.querySelector('.selected');
 			const currentColor = currentSelected.style.backgroundColor;
 
-			target.setAttribute('prevColor', target.style.backgroundColor);
+			if (event.buttons !== 1) {
+				target.setAttribute('prevColor', target.style.backgroundColor);
+			} else {
+				target.setAttribute('prevColor', currentColor);
+				setPixelData(
+					target.dataset.x,
+					target.dataset.y,
+					currentColor
+				);
+			}
+
 			target.style.backgroundColor = currentColor;
 		}
 	});
