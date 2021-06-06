@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Pixel Art</title>
 
-    <link rel="icon" type="image/png" href="./favicon.png"/>
+		<link rel="icon" type="image/png" href="./favicon.png" />
 		<link rel="stylesheet" href="style.css" />
 		<script src="script.js"></script>
 	</head>
@@ -21,11 +21,21 @@
 
 			<section class="inputs">
 				<section class="pixel-inputs">
-					<input type="number" id="pixel-size" />
+					<input
+						type="text"
+						inputmode="numeric"
+						pattern="[0-9]*"
+						id="pixel-size"
+					/>
 					<button id="change-pixel-size">PIXEL SIZE</button>
 				</section>
 				<section class="board-inputs">
-					<input type="number" id="board-size" />
+					<input
+						type="text"
+						inputmode="numeric"
+						pattern="[0-9]*"
+						id="board-size"
+					/>
 					<button id="generate-board">BOARD SIZE</button>
 				</section>
 			</section>

@@ -172,7 +172,7 @@ button:active {
 }
 
 /* inputs */
-input[type='number'] {
+input[type='text'] {
 	font-family: var(--main-font);
 	background: var(--body-color);
 	border: none;
@@ -185,7 +185,7 @@ input[type='number'] {
 	transition: background-color 0.2s, color 0.2s;
 }
 
-input[type='number']:focus-visible {
+input[type='text']:focus-visible {
 	outline: none;
 }
 

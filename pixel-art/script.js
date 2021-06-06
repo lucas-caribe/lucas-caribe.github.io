@@ -276,6 +276,10 @@ function addGenerateBoardEventListener() {
 	generateBoardButton.addEventListener('click', handleGenerateBoardClick);
 }
 
+function handleNumberInput(event) {
+	event.target.value = event.target.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+}
+
 function addBoardSizeInputEventListener() {
 	const boardSizeInput = document.querySelector('#board-size');
 	boardSizeInput.placeholder = String(boardSize);
@@ -289,6 +293,8 @@ function addBoardSizeInputEventListener() {
 			generateBoardButton.click();
 		}
 	});
+
+	boardSizeInput.addEventListener('input', handleNumberInput);
 }
 
 function handlePixelSizeButtonClick(event) {
@@ -328,6 +334,8 @@ function addPixelInputEventListener() {
 			pixelSizeButton.click();
 		}
 	});
+
+	pixelSizeInput.addEventListener('input', handleNumberInput);
 }
 
 function addToggleHeaderEventListener() {
