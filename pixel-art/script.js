@@ -235,6 +235,10 @@ function addSaveBoardEventListener() {
 		event.preventDefault();
 
 		localStorage.setItem('pixelArtData', JSON.stringify(pixelData));
+		localStorage.setItem('pixelArtBoardSize', JSON.stringify(boardSize));
+		localStorage.setItem('pixelArtPixelSize', JSON.stringify(pixelSize));
+
+		alert('Done!');
 	});
 }
 
@@ -336,9 +340,13 @@ function addToggleHeaderEventListener() {
 
 function retrievePixelDataFromLocalStorage() {
 	const data = JSON.parse(localStorage.getItem('pixelArtData'));
+	const boardSizeData = JSON.parse(localStorage.getItem('pixelArtBoardSize'));
+	const pixelSizeData = pixelSize = JSON.parse(localStorage.getItem('pixelArtPixelSize'));
 
 	if (data) {
 		pixelData = data;
+		boardSize = boardSizeData ? boardSizeData : boardSize;
+		pixelSize = pixelSizeData ? pixelSizeData : pixelSize;
 	}
 }
 
