@@ -209,3 +209,13 @@ input[type='color'] {
 	visibility: hidden;
 	position: absolute;
 }
+
+@media only screen and (max-width: 799px) {
+	header {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	header h1 {
+		display: none;
+	}
+}
