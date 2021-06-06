@@ -1,5 +1,4 @@
 const pixelBoardId = '#pixel-board';
-const pixelData = {};
 const colorPaletteId = '#color-palette';
 const colors = [
 	'#000',
@@ -22,6 +21,7 @@ const minPixelSize = 8;
 
 let pixelSize = 40;
 let boardSize = 14;
+let pixelData = {};
 
 // board and color palette
 function createColorDiv(color, index) {
@@ -216,11 +216,25 @@ function addClearBoardEventListener() {
 	clearButton.addEventListener('click', (event) => {
 		event.preventDefault();
 
-		const pixels = document.querySelectorAll('.pixel');
+		if (confirm('Are you sure you want to delete your beautiful art?')) {
+			const pixels = document.querySelectorAll('.pixel');
 
-		for (let i = 0; i < pixels.length; i += 1) {
-			pixels[i].style.backgroundColor = 'white';
+			for (let i = 0; i < pixels.length; i += 1) {
+				pixels[i].style.backgroundColor = 'white';
+			}
+
+			pixelData = {};
 		}
+	});
+}
+
+function addSaveBoardEventListener() {
+	const saveButton = document.querySelector('#save-board');
+
+	saveButton.addEventListener('click', (event) => {
+		event.preventDefault();
+
+		localStorage.setItem('pixelArtData', JSON.stringify(pixelData));
 	});
 }
 
@@ -320,7 +334,16 @@ function addToggleHeaderEventListener() {
 	});
 }
 
+function retrievePixelDataFromLocalStorage() {
+	const data = JSON.parse(localStorage.getItem('pixelArtData'));
+
+	if (data) {
+		pixelData = data;
+	}
+}
+
 window.onload = () => {
+	retrievePixelDataFromLocalStorage();
 	setColors();
 	setPixelBoard(boardSize, pixelSize);
 	addColorPaletteEventListener();
@@ -330,6 +353,7 @@ window.onload = () => {
 	addPixelBoardMouseOver();
 	addPixelBoardMouseOut();
 	addClearBoardEventListener();
+	addSaveBoardEventListener();
 	addGenerateBoardEventListener();
 	addBoardSizeInputEventListener();
 	addPixelSizeEventListener();

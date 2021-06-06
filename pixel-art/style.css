@@ -51,10 +51,45 @@ header h1 {
 	text-shadow: 1px 2px 0px black;
 }
 
-#clear-board {
+/* buttons */
+button {
+	cursor: pointer;
+	user-select: none;
+	background: var(--main-purple);
+	border: transparent;
+	border-radius: 20px;
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	width: auto;
+	padding: 0.6em 1.2em;
+	text-align: center;
+	transition: brightness 0.2s;
+	text-shadow: 1px 1px 0px black;
+	box-shadow: 1px 2px 0px black;
+	position: relative;
+}
+
+button:hover {
+	background-color: var(--main-purple-hover);
+}
+
+button:active {
+	top: 2px;
+	left: 2px;
+	outline: 4px solid var(--header-color);
+	box-shadow: 1px 2px 0px var(--header-color);
+}
+
+#clear-board,
+#save-board {
 	justify-self: center;
-	width: 11em;
+	width: 9em;
 	padding: 1em 1.5em;
+}
+
+.main-buttons {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 /* colors */
@@ -86,10 +121,10 @@ header h1 {
 	top: 50%;
 	left: 100%;
 	transform: translateY(-50%);
-	padding: .5em 1em;
+	padding: 0.5em 1em;
 	background: var(--main-purple);
 	border-radius: 15px;
-	font-size: .6em;
+	font-size: 0.6em;
 	color: white;
 	opacity: 0;
 	transition: opacity 0.3s;
@@ -113,7 +148,7 @@ header h1 {
 #color-palette:hover .palette-tooltip,
 #color-palette:hover .palette-tooltip::after {
 	visibility: visible;
-  opacity: 1;
+	opacity: 1;
 }
 
 .selected {
@@ -131,35 +166,6 @@ header h1 {
 .pixel {
 	background-color: white;
 	border: 1px solid rgb(189, 189, 189);
-}
-
-/* buttons */
-button {
-	cursor: pointer;
-	user-select: none;
-	background: var(--main-purple);
-	border: transparent;
-	border-radius: 20px;
-	color: white;
-	font-family: 'Press Start 2P', cursive;
-	width: auto;
-	padding: 0.6em 1.2em;
-	text-align: center;
-	transition: brightness 0.2s;
-	text-shadow: 1px 1px 0px black;
-	box-shadow: 1px 2px 0px black;
-	position: relative;
-}
-
-button:hover {
-	background-color: var(--main-purple-hover);
-}
-
-button:active {
-	top: 2px;
-	left: 2px;
-	outline: 4px solid var(--header-color);
-	box-shadow: 1px 2px 0px var(--header-color);
 }
 
 /* inputs */
