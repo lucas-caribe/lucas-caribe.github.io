@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <title>Trybewarts</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/trybewarts-colored-2.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="./libs/validation-helpers.js"></script>
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo-container">
+          <img
+            src="images/trybewarts-header-logo.svg"
+            class="trybewarts-header-logo"
+            alt="logo trybe warts"
+          />
+          <h1 id="trybewarts-header-title">Trybewarts</h1>
+        </div>
+        <form class="trybewarts-login">
+          <input id="login-input" type="text" placeholder="Login" />
+          <input id="password-input" type="password" placeholder="Senha" />
+          <button id="login-button" type="submit">Logar</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <form action="" id="evaluation-form">
+        <!-- Primeira seção -->
+        <div class="first-form-section">
+          <input type="text" id="input-name" placeholder="Nome" />
+          <input type="text" id="input-lastname" placeholder="Sobrenome" />
+          <input type="text" id="input-email" placeholder="Email" />
+
+          <div class="house-section">
+            <label for="house">Casa:</label>
+            <select name="house" id="house">
+              <option hidden default selected>- selecione a casa -</option>
+              <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+              <option id="corvinode-house" value="Corvinode">Corvinode</option>
+              <option id="pytherina-house" value="Pytherina">Pytherina</option>
+            </select>
+            <i class="fa fa-angle-down"></i>
+          </div>
+        </div>
+        <hr />
+
+        <!-- Segunda seção -->
+        <div class="second-form-section">
+          <div class="family-section">
+            <label id="label-family">Qual sua família?</label>
+          </div>
+
+          <div class="content-section">
+            <label id="label-content">
+              Qual conteúdo você está com mais vontade de aprender?
+            </label>
+
+            <div class="checkbox-section"></div>
+          </div>
+        </div>
+        <hr />
+
+        <!-- Terceira seção -->
+        <div class="third-form-section">
+          <div class="feedback-section">
+            <label id="label-rate">Como você avalia a Trybewarts?</label>
+          </div>
+
+          <div class="text-container">
+            <label for="textarea">Deixe seu comentário:</label>
+            <textarea id="textarea" maxlength="500"></textarea>
+            <div id="counter">500</div>
+          </div>
+
+          <div class="input-container">
+            <label id="label-infos" for="agreement">
+              Você concorda com o uso das informações acima?
+            </label>
+            <input type="checkbox" id="agreement" />
+          </div>
+
+          <button type="submit" id="submit-btn" disabled>Enviar</button>
+        </div>
+      </form>
+
+      <div class="logo-section">
+        <img
+          id="trybewarts-forms-logo"
+          src="images/trybewarts-colored-2.png"
+          alt="Trybewarts Logo"
+        />
+      </div>
+    </main>
+    <footer>Direitos reservados à Trybewarts©</footer>
+  </body>
+</html>

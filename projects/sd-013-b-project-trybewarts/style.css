@@ -1,0 +1,261 @@
+:root {
+  --primary-color: rgb(136, 22, 39);
+  --secondary-color: rgb(252, 211, 81);
+  --tertiary-color: rgb(29, 28, 23);
+  --background-color: rgb(255, 253, 244);
+  --paper-texture: url('./images/beige-paper-texture.png');
+  --fabric-texture: url('./images/black-linen-texture.png');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-size: 1em;
+  font-family: IBM Plex serif, serif;
+}
+
+/* inputs e buttons */
+textarea {
+  padding: 0.5em;
+  height: 7em;
+  resize: none;
+}
+
+input[type='password'],
+input[type='text'],
+textarea {
+  background: var(--background-color);
+  background-image: var(--paper-texture);
+  border: none;
+  padding: 0 1em;
+  border-radius: 6px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  font-family: IBM Plex serif, serif;
+  font-size: 0.9em;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgb(255, 196, 38);
+}
+
+button {
+  background: var(--secondary-color);
+  border: none;
+  padding: 0 2em;
+  border-radius: 6px;
+  font-weight: 700;
+  font-family: IBM Plex serif, serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: var(--tertiary-color);
+}
+
+button:hover {
+  background: rgb(255, 196, 38);
+}
+
+button:disabled {
+  cursor: initial;
+  background: rgba(252, 212, 81, 0.7);
+}
+
+/* header */
+header {
+  background-color: var(--primary-color);
+  background-image: var(--fabric-texture);
+  color: var(--secondary-color);
+  letter-spacing: 0.2em;
+}
+
+.header-content {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.trybewarts-header-logo {
+  width: 3.3em;
+  margin-right: 1.5em;
+}
+
+.trybewarts-login {
+  display: flex;
+  height: 2em;
+}
+
+.trybewarts-login input {
+  width: 14em;
+  margin-right: 1em;
+}
+
+/* main */
+main {
+  display: flex;
+  padding: 1.2em 5%;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-color);
+  background-image: var(--paper-texture);
+}
+
+#trybewarts-forms-logo {
+  height: 28em;
+}
+
+/* form */
+hr {
+  color: rgba(0, 0, 0, 0.15);
+  width: 90%;
+  margin: 0 auto;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  background-image: var(--fabric-texture);
+}
+
+.first-form-section {
+  display: grid;
+  height: 5.5em;
+  margin: 1em;
+  gap: 1em;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.first-form-section input {
+  height: 100%;
+}
+
+.house-section {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.house-section label {
+  margin-right: 1em;
+}
+
+.house-section select {
+  height: 100%;
+  border-radius: 6px;
+  border: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 0 0.5em;
+  appearance: none;
+  flex-grow: 1;
+  background: var(--background-color);
+  background-image: var(--paper-texture);
+}
+
+.house-section i {
+  position: absolute;
+  color: black;
+  right: 14px;
+  pointer-events: none;
+}
+
+.second-form-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1em;
+  margin: 1em;
+}
+
+.family-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-family {
+  margin-bottom: 0.5em;
+}
+
+.family-section input {
+  margin: 0.3em 0;
+  margin-right: 0.5em;
+}
+
+.content-section {
+  margin: 0 auto;
+}
+
+.checkbox-section {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.checkbox-section input {
+  margin-right: 0.5em;
+}
+
+.third-form-section {
+  margin: 1em 1em 0;
+}
+
+.third-form-section > * {
+  margin-bottom: 1em;
+}
+
+.feedback-section label {
+  margin-right: 0.5em;
+}
+
+.feedback-section input {
+  margin-right: 0.4em;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.text-container label {
+  margin-bottom: 0.5em;
+}
+
+#counter {
+  position: absolute;
+  pointer-events: none;
+  color: rgb(82, 82, 82);
+  bottom: 5px;
+  right: 10px;
+}
+
+#submit-btn {
+  width: 100%;
+  padding: 0.5em 0;
+}
+
+/* rodapé */
+footer {
+  padding: 1em 0;
+  text-align: center;
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+  background-image: var(--fabric-texture);
+}
