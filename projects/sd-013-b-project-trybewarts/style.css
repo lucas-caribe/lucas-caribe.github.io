@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Z003 mediumitalic;
+  src: url('./Z003-MediumItalic.ttf');
+}
+
 :root {
   --primary-color: rgb(136, 22, 39);
   --secondary-color: rgb(252, 211, 81);
@@ -28,6 +33,7 @@ textarea {
 input[type='password'],
 input[type='text'],
 textarea {
+  position: relative;
   background: var(--background-color);
   background-image: var(--paper-texture);
   border: none;
@@ -40,7 +46,8 @@ textarea {
 
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid rgb(255, 196, 38);
+  outline: none;
+  filter: brightness(1.08);
 }
 
 button {
@@ -281,12 +288,12 @@ footer {
   position: relative;
   padding: 3em;
   color: #141410;
-  font-family: cursive;
+  font-family: Z003 mediumitalic, cursive;
   font-size: 1.4em;
 }
 
 .content p {
-  margin: .3em 0;
+  margin: 0.3em 0;
   width: 100%;
   overflow-wrap: break-word;
 }
