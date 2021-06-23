@@ -14,14 +14,13 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-size: 1em;
   font-family: IBM Plex serif, serif;
 }
 
 /* inputs e buttons */
 textarea {
-  padding: 0.5em;
   height: 7em;
   resize: none;
 }
@@ -32,7 +31,7 @@ textarea {
   background: var(--background-color);
   background-image: var(--paper-texture);
   border: none;
-  padding: 0 1em;
+  padding: 0.5em 1em;
   border-radius: 6px;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
   font-family: IBM Plex serif, serif;
@@ -105,15 +104,18 @@ header {
 /* main */
 main {
   display: flex;
-  padding: 1.2em 5%;
-  justify-content: space-between;
+  padding: 1.2em 6%;
+  position: relative;
+  justify-content: space-evenly;
   align-items: center;
   background: var(--background-color);
   background-image: var(--paper-texture);
+  min-height: 86vh;
 }
 
 #trybewarts-forms-logo {
-  height: 28em;
+  height: 26em;
+  transition: margin 0.4s ease;
 }
 
 /* form */
@@ -123,7 +125,7 @@ hr {
   margin: 0 auto;
 }
 
-#evaluation-form {
+.evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
@@ -251,11 +253,49 @@ hr {
   padding: 0.5em 0;
 }
 
-/* rodapé */
+/* footer */
 footer {
   padding: 1em 0;
   text-align: center;
   color: var(--secondary-color);
   background-color: var(--tertiary-color);
   background-image: var(--fabric-texture);
+}
+
+/* form-result */
+.old-paper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: url(#paper-filter);
+  box-shadow: 2px 3px 20px gray, 0 0 125px #8f5922 inset;
+  pointer-events: none;
+}
+
+.content {
+  order: -1;
+  height: 100%;
+  width: 40%;
+  position: relative;
+  padding: 3em;
+  color: #141410;
+  font-family: cursive;
+  font-size: 1.4em;
+}
+
+.content p {
+  margin: .3em 0;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.content img {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  width: 80px;
+  filter: grayscale(100%) opacity(40%);
+  pointer-events: none;
 }

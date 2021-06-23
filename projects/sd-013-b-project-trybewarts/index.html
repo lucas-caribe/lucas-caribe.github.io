@@ -26,6 +26,12 @@
   </head>
 
   <body>
+    <svg style="position: absolute; top: 0; left: 0;">
+      <filter id="paper-filter">
+        <feturbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1"></feturbulence>
+        <feDisplacementMap in="SourceGraphic" scale="20" />
+      </filter>
+    </svg>
     <header class="header">
       <div class="header-content">
         <div class="logo-container">
@@ -45,7 +51,7 @@
     </header>
 
     <main>
-      <form action="" id="evaluation-form">
+      <form class="evaluation-form">
         <!-- Primeira seção -->
         <div class="first-form-section">
           <input type="text" id="input-name" placeholder="Nome" />

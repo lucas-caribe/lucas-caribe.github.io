@@ -63,20 +63,43 @@ function createUserDataElement(elementName, text) {
 }
 
 // mostrando os dados salvos na tela
+function createPaper() {
+  const paperDiv = document.createElement('div');
+  paperDiv.className = 'old-paper';
+
+  return paperDiv;
+}
+
 function setResponse(formData) {
-  const form = document.querySelector('#evaluation-form');
-  form.innerHTML = '';
+  const main = document.querySelector('main');
+  const form = document.querySelector('.evaluation-form');
+  form.remove();
+
+  const paper = createPaper();
 
   const fullName = `${formData.name} ${formData.lastName}`;
   const content = formData.content.join(', ');
 
-  form.appendChild(createUserDataElement('Nome', fullName));
-  form.appendChild(createUserDataElement('Email', formData.email));
-  form.appendChild(createUserDataElement('Casa', formData.house));
-  form.appendChild(createUserDataElement('Família', formData.family));
-  form.appendChild(createUserDataElement('Matérias', content));
-  form.appendChild(createUserDataElement('Avaliação', formData.rating));
-  form.appendChild(createUserDataElement('Observações', formData.comment));
+  const logo = document.querySelector('#trybewarts-forms-logo');
+  logo.style.marginLeft = '3em';
+
+  const waterMark = document.createElement('img');
+  waterMark.src = './images/trybewarts-colored-2.png';
+
+  const contentDiv = document.createElement('div');
+  contentDiv.className = 'content';
+
+  contentDiv.appendChild(paper);
+  contentDiv.appendChild(createUserDataElement('Nome', fullName));
+  contentDiv.appendChild(createUserDataElement('Email', formData.email));
+  contentDiv.appendChild(createUserDataElement('Casa', formData.house));
+  contentDiv.appendChild(createUserDataElement('Família', formData.family));
+  contentDiv.appendChild(createUserDataElement('Matérias', content));
+  contentDiv.appendChild(createUserDataElement('Avaliação', formData.rating));
+  contentDiv.appendChild(createUserDataElement('Observações', formData.comment));
+  contentDiv.appendChild(waterMark);
+
+  main.appendChild(contentDiv);
 }
 
 function createInputWithLabel({ type, name, id, className, labelText }) {
