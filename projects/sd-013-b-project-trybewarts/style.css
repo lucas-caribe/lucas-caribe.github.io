@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: Z003 mediumitalic;
   src: url('./Z003-MediumItalic.ttf');
-}
+} */
 
 :root {
   --primary-color: rgb(136, 22, 39);
@@ -45,7 +45,8 @@ textarea {
 }
 
 input:focus-visible,
-textarea:focus-visible {
+textarea:focus-visible,
+#house:focus-visible {
   outline: none;
   filter: brightness(1.08);
 }
@@ -68,7 +69,7 @@ button:hover {
 
 button:disabled {
   cursor: initial;
-  background: rgba(252, 212, 81, 0.7);
+  background: rgba(252, 212, 81, 0.397);
 }
 
 /* header */

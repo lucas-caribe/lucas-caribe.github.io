@@ -63,22 +63,10 @@ function createUserDataElement(elementName, text) {
 }
 
 // mostrando os dados salvos na tela
-function createPaper() {
-  const paperDiv = document.createElement('div');
-  paperDiv.className = 'old-paper';
-
-  return paperDiv;
-}
-
 function setResponse(formData) {
   const main = document.querySelector('main');
   const form = document.querySelector('.evaluation-form');
   form.remove();
-
-  const paper = createPaper();
-
-  const fullName = `${formData.name} ${formData.lastName}`;
-  const content = formData.content.join(', ');
 
   const logo = document.querySelector('#trybewarts-forms-logo');
   logo.style.marginLeft = '3em';
@@ -86,17 +74,26 @@ function setResponse(formData) {
   const waterMark = document.createElement('img');
   waterMark.src = './images/trybewarts-colored-2.png';
 
+  const paperDiv = document.createElement('div');
+  paperDiv.className = 'old-paper';
+
   const contentDiv = document.createElement('div');
   contentDiv.className = 'content';
 
-  contentDiv.appendChild(paper);
-  contentDiv.appendChild(createUserDataElement('Nome', fullName));
+  contentDiv.appendChild(paperDiv);
+  contentDiv.appendChild(
+    createUserDataElement('Nome', `${formData.name} ${formData.lastName}`),
+  );
   contentDiv.appendChild(createUserDataElement('Email', formData.email));
   contentDiv.appendChild(createUserDataElement('Casa', formData.house));
   contentDiv.appendChild(createUserDataElement('Família', formData.family));
-  contentDiv.appendChild(createUserDataElement('Matérias', content));
+  contentDiv.appendChild(
+    createUserDataElement('Matérias', formData.content.join(', ')),
+  );
   contentDiv.appendChild(createUserDataElement('Avaliação', formData.rating));
-  contentDiv.appendChild(createUserDataElement('Observações', formData.comment));
+  contentDiv.appendChild(
+    createUserDataElement('Observações', formData.comment),
+  );
   contentDiv.appendChild(waterMark);
 
   main.appendChild(contentDiv);
