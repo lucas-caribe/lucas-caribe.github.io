@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/pokedex/static/css/main.d3120b1f.chunk.css",
+    "main.js": "/pokedex/static/js/main.2e5ae08f.chunk.js",
+    "main.js.map": "/pokedex/static/js/main.2e5ae08f.chunk.js.map",
+    "runtime-main.js": "/pokedex/static/js/runtime-main.2d94522c.js",
+    "runtime-main.js.map": "/pokedex/static/js/runtime-main.2d94522c.js.map",
+    "static/js/2.c3255ced.chunk.js": "/pokedex/static/js/2.c3255ced.chunk.js",
+    "static/js/2.c3255ced.chunk.js.map": "/pokedex/static/js/2.c3255ced.chunk.js.map",
+    "index.html": "/pokedex/index.html",
+    "precache-manifest.d76b55cadcf0ab1e78a7188c7e95aa36.js": "/pokedex/precache-manifest.d76b55cadcf0ab1e78a7188c7e95aa36.js",
+    "service-worker.js": "/pokedex/service-worker.js",
+    "static/css/main.d3120b1f.chunk.css.map": "/pokedex/static/css/main.d3120b1f.chunk.css.map",
+    "static/js/2.c3255ced.chunk.js.LICENSE.txt": "/pokedex/static/js/2.c3255ced.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/pokedex/static/media/gill-sans-nova.4554e8a5.ttf",
+    "static/media/App.css": "/pokedex/static/media/pokeball.1ebe3f2f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2d94522c.js",
+    "static/js/2.c3255ced.chunk.js",
+    "static/css/main.d3120b1f.chunk.css",
+    "static/js/main.2e5ae08f.chunk.js"
+  ]
+}
