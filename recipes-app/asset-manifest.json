@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/recipes-app/static/css/main.b6f7a146.chunk.css",
-    "main.js": "/recipes-app/static/js/main.87cc05fd.chunk.js",
-    "main.js.map": "/recipes-app/static/js/main.87cc05fd.chunk.js.map",
+    "main.css": "/recipes-app/static/css/main.96118553.chunk.css",
+    "main.js": "/recipes-app/static/js/main.e3fd1f9a.chunk.js",
+    "main.js.map": "/recipes-app/static/js/main.e3fd1f9a.chunk.js.map",
     "runtime-main.js": "/recipes-app/static/js/runtime-main.1228032d.js",
     "runtime-main.js.map": "/recipes-app/static/js/runtime-main.1228032d.js.map",
-    "static/js/2.c3ecdc69.chunk.js": "/recipes-app/static/js/2.c3ecdc69.chunk.js",
-    "static/js/2.c3ecdc69.chunk.js.map": "/recipes-app/static/js/2.c3ecdc69.chunk.js.map",
+    "static/js/2.39ea52e7.chunk.js": "/recipes-app/static/js/2.39ea52e7.chunk.js",
+    "static/js/2.39ea52e7.chunk.js.map": "/recipes-app/static/js/2.39ea52e7.chunk.js.map",
     "index.html": "/recipes-app/index.html",
-    "precache-manifest.b4dacf50e536828dad41319a794a67ff.js": "/recipes-app/precache-manifest.b4dacf50e536828dad41319a794a67ff.js",
+    "precache-manifest.c470caddaba3b82ab9868aaaa258fc21.js": "/recipes-app/precache-manifest.c470caddaba3b82ab9868aaaa258fc21.js",
     "service-worker.js": "/recipes-app/service-worker.js",
-    "static/css/main.b6f7a146.chunk.css.map": "/recipes-app/static/css/main.b6f7a146.chunk.css.map",
-    "static/js/2.c3ecdc69.chunk.js.LICENSE.txt": "/recipes-app/static/js/2.c3ecdc69.chunk.js.LICENSE.txt",
+    "static/css/main.96118553.chunk.css.map": "/recipes-app/static/css/main.96118553.chunk.css.map",
+    "static/js/2.39ea52e7.chunk.js.LICENSE.txt": "/recipes-app/static/js/2.39ea52e7.chunk.js.LICENSE.txt",
     "static/media/backIcon.svg": "/recipes-app/static/media/backIcon.f05e56a5.svg",
     "static/media/blackHeartIcon.svg": "/recipes-app/static/media/blackHeartIcon.bd863160.svg",
     "static/media/drinkIcon.svg": "/recipes-app/static/media/drinkIcon.c73a5c80.svg",
     "static/media/email.svg": "/recipes-app/static/media/email.3e8aa4fb.svg",
     "static/media/style.css": "/recipes-app/static/media/profile-background-small.93c92367.jpeg",
     "static/media/exploreIcon.svg": "/recipes-app/static/media/exploreIcon.ce55ae2a.svg",
+    "static/media/logo.png": "/recipes-app/static/media/logo.8000cbd4.png",
     "static/media/mealIcon.svg": "/recipes-app/static/media/mealIcon.d602865a.svg",
     "static/media/password.svg": "/recipes-app/static/media/password.7ec5915e.svg",
     "static/media/profileIcon.svg": "/recipes-app/static/media/profileIcon.04b0fa60.svg",
@@ -27,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1228032d.js",
-    "static/js/2.c3ecdc69.chunk.js",
-    "static/css/main.b6f7a146.chunk.css",
-    "static/js/main.87cc05fd.chunk.js"
+    "static/js/2.39ea52e7.chunk.js",
+    "static/css/main.96118553.chunk.css",
+    "static/js/main.e3fd1f9a.chunk.js"
   ]
 }
