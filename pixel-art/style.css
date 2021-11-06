@@ -6,6 +6,9 @@
 	--main-purple-hover: #be0a79;
 	--body-color: #d4d4d4;
 	--main-font: 'Press Start 2P', sans-serif;
+	--display-background: #9BD225;
+	--display-color: #314702;
+
 }
 
 * {
@@ -18,6 +21,16 @@ body {
 	font-family: var(--main-font);
 	text-align: center;
 	background-color: var(--body-color);
+}
+
+body::-webkit-scrollbar {
+	width: 0.5em;
+	background: var(--header-color);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #797979;
+	border-radius: 50px;
 }
 
 /* header */
@@ -174,13 +187,14 @@ button:active {
 /* inputs */
 input[type='text'] {
 	font-family: var(--main-font);
-	background: var(--body-color);
+	background: var(--display-background);
 	border: none;
 	border-radius: 20px;
-	color: black;
+	color: var(--display-color);
 	box-shadow: inset 0px 0px 5px 1px gray;
-	width: 8em;
-	padding: 0.5em 1em;
+	margin-bottom: 0.5em;
+	width: 8rem;
+	padding: 0.5rem;
 	text-align: center;
 	transition: background-color 0.2s, color 0.2s;
 }
@@ -202,9 +216,10 @@ input[type='text']:focus-visible {
 	margin: 0.5em;
 }
 
-.board-inputs > input,
-.pixel-inputs > input {
-	margin-bottom: 0.5em;
+.inputs button {
+	font-size: 0.6em;
+	padding: 0.5rem 0;
+	width: 8rem;
 }
 
 /* color inputs */
