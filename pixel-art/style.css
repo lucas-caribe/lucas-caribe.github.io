@@ -191,7 +191,7 @@ input[type='text'] {
 	border: none;
 	border-radius: 20px;
 	color: var(--display-color);
-	box-shadow: inset 0px 0px 5px 1px gray;
+	box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
 	margin-bottom: 0.5em;
 	width: 8rem;
 	padding: 0.5rem;
@@ -201,6 +201,7 @@ input[type='text'] {
 
 input[type='text']:focus-visible {
 	outline: none;
+	filter: brightness(1.1);
 }
 
 .inputs {
