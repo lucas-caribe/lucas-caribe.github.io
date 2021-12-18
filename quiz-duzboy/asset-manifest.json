@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/quiz-uzboy/static/css/main.008aebe4.chunk.css",
-    "main.js": "/quiz-uzboy/static/js/main.7bd2677b.chunk.js",
-    "main.js.map": "/quiz-uzboy/static/js/main.7bd2677b.chunk.js.map",
-    "runtime-main.js": "/quiz-uzboy/static/js/runtime-main.377f42d9.js",
-    "runtime-main.js.map": "/quiz-uzboy/static/js/runtime-main.377f42d9.js.map",
-    "static/js/2.b84c2cb5.chunk.js": "/quiz-uzboy/static/js/2.b84c2cb5.chunk.js",
-    "static/js/2.b84c2cb5.chunk.js.map": "/quiz-uzboy/static/js/2.b84c2cb5.chunk.js.map",
-    "index.html": "/quiz-uzboy/index.html",
-    "precache-manifest.de1f2c7e6c80b398d0c0c8c1b0addb0c.js": "/quiz-uzboy/precache-manifest.de1f2c7e6c80b398d0c0c8c1b0addb0c.js",
-    "service-worker.js": "/quiz-uzboy/service-worker.js",
-    "static/css/main.008aebe4.chunk.css.map": "/quiz-uzboy/static/css/main.008aebe4.chunk.css.map",
-    "static/js/2.b84c2cb5.chunk.js.LICENSE": "/quiz-uzboy/static/js/2.b84c2cb5.chunk.js.LICENSE",
-    "static/media/betterLogo.png": "/quiz-uzboy/static/media/betterLogo.89d799ef.png",
-    "static/media/gusta.jpeg": "/quiz-uzboy/static/media/gusta.6cbe145e.jpeg",
-    "static/media/pablao.jpeg": "/quiz-uzboy/static/media/pablao.b73ecb14.jpeg",
-    "static/media/rau.png": "/quiz-uzboy/static/media/rau.db059c17.png"
+    "main.css": "/quiz-duzboy/static/css/main.008aebe4.chunk.css",
+    "main.js": "/quiz-duzboy/static/js/main.26febdef.chunk.js",
+    "main.js.map": "/quiz-duzboy/static/js/main.26febdef.chunk.js.map",
+    "runtime-main.js": "/quiz-duzboy/static/js/runtime-main.a512344d.js",
+    "runtime-main.js.map": "/quiz-duzboy/static/js/runtime-main.a512344d.js.map",
+    "static/js/2.b84c2cb5.chunk.js": "/quiz-duzboy/static/js/2.b84c2cb5.chunk.js",
+    "static/js/2.b84c2cb5.chunk.js.map": "/quiz-duzboy/static/js/2.b84c2cb5.chunk.js.map",
+    "index.html": "/quiz-duzboy/index.html",
+    "precache-manifest.40f0150b6051b386bc64b413eaf31549.js": "/quiz-duzboy/precache-manifest.40f0150b6051b386bc64b413eaf31549.js",
+    "service-worker.js": "/quiz-duzboy/service-worker.js",
+    "static/css/main.008aebe4.chunk.css.map": "/quiz-duzboy/static/css/main.008aebe4.chunk.css.map",
+    "static/js/2.b84c2cb5.chunk.js.LICENSE": "/quiz-duzboy/static/js/2.b84c2cb5.chunk.js.LICENSE",
+    "static/media/betterLogo.png": "/quiz-duzboy/static/media/betterLogo.89d799ef.png",
+    "static/media/gusta.jpeg": "/quiz-duzboy/static/media/gusta.6cbe145e.jpeg",
+    "static/media/pablao.jpeg": "/quiz-duzboy/static/media/pablao.b73ecb14.jpeg",
+    "static/media/rau.png": "/quiz-duzboy/static/media/rau.db059c17.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.377f42d9.js",
+    "static/js/runtime-main.a512344d.js",
     "static/js/2.b84c2cb5.chunk.js",
     "static/css/main.008aebe4.chunk.css",
-    "static/js/main.7bd2677b.chunk.js"
+    "static/js/main.26febdef.chunk.js"
   ]
 }
