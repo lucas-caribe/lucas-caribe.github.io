@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "de4c9f3b5f32cd3608e97cf350212949",
+    "revision": "f3f0572a7826eadf1509364fe55ffa4d",
     "url": "/quiz-uzboy/index.html"
   },
   {
-    "revision": "ddffed03384e2b82d0d3",
+    "revision": "3540af07f86c3ed35c56",
     "url": "/quiz-uzboy/static/css/main.008aebe4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/quiz-uzboy/static/js/2.b84c2cb5.chunk.js.LICENSE"
   },
   {
-    "revision": "ddffed03384e2b82d0d3",
-    "url": "/quiz-uzboy/static/js/main.1cef5e70.chunk.js"
+    "revision": "3540af07f86c3ed35c56",
+    "url": "/quiz-uzboy/static/js/main.7bd2677b.chunk.js"
   },
   {
     "revision": "4b21561aac5ac86644a5",
