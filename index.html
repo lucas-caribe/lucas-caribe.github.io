@@ -1,53 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Depressão</title>
 
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-<!--     <ul class="navigation">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#links">Cool Links</a></li>
-    </ul>
-
-    <h1 class="my-name">Lucas Caribé</h1>
-
-    <img id="profile-picture" src="./assets/profile.jpeg" alt="Lucas Caribé" width="200">
-
-    <h1>About Me</h1>
-
-    <p id="about">
-        My name is <strong>Lucas Caribé</strong>,
-        I'm 29 years old and I'm from <strong>Montes Claros/MG - Brazil</strong>.
-        <br><br>
-        I'm a <em>lifelong learner</em> very interested in Computer Science, I know a bit of everything
-        but I want to specialize in Web App Development. I really like studying, creating new things, solving problems and overcoming challenges.
-        <br><br>
-        Besides the great interest in Computer Science, I also like languages and 
-        psychology, one of my favorite hobbies is to observe, discuss and try to understand 
-        the human behavior in all its details.
-    </p>
-
-    <h1>Skills</h1>
-
-    <p id="skills">
-        <strong>Problem Solving</strong>, Communication, C/C++, JavaScript
-        <br>
-        HTML, CSS, ReactJS, NodeJS
-        <br>
-        SQL, Git and Github
-    </p>
-
-    <h1 id="links">Cool Links</h1>
-
-    <a href="https://google.com" target="_blank">My best friend</a>
-    <br><br>
-    <a href="https://stackoverflow.com" target="_blank">My second best friend</a> -->
-    <h1>TODO</h1>
-</body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>CLIQUE NO BOTÃO PARA DESCOBRIR UM SEGREDO</h1>
+    <h1 id="hidden" style="display: none">AAAAAAAAAAAAAAAAAAAAA TO COM DEPRESSÃO</h1>
+    <button id="segredo">DESCOBRIR SEGREDO</button>
+    <script>
+      window.onload = function () {
+        document.getElementById('segredo').addEventListener('click', function () {
+          document.getElementById('hidden').style.display = 'block';
+        });
+      };
+    </script>
+  </body>
 </html>
